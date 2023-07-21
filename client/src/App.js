@@ -22,7 +22,7 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch("http://localhost:8888/bidding", {
+    fetch("http://0.0.0.0:8888/bidding", {
       method: "POST",
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify({
