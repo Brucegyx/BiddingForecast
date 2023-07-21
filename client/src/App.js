@@ -24,7 +24,8 @@ function App() {
     e.preventDefault();
     fetch("http://localhost:8888/bidding", {
       method: "POST",
-      headers: {"Content-Type": "application/json"},
+      headers: {"Content-Type": "application/json",
+                "Access-Control-Allow-Origin": '*'},
       body: JSON.stringify({
         "bidsNum": form.bidsNum,
         "bidsRangeLow": form.bidsRangeLow,
