@@ -22,7 +22,7 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch("http://34.81.205.179:8888/bidding", {
+    fetch("http://localhost:8888/bidding", {
       method: "POST",
       headers: {"Content-Type": "application/json",
                 "Access-Control-Allow-Origin": '*'},
